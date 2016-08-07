@@ -1,9 +1,9 @@
 //
-//  PlayerViewController.h
-//  高仿映客
+//  PlayerTableViewCell.h
+//  NOW
 //
-//  Created by JIAAIR on 16/7/2.
-//  Copyright © 2016年 JIAAIR. All rights reserved.
+//  Created by ArJun on 16/8/7.
+//  Copyright © 2016年 ArJun. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
