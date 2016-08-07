@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fee-6i-sUU">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Base View Controller-->
+        <scene sceneID="dkI-Ej-GjF">
+            <objects>
+                <tabBarController id="LQ7-6l-nee" customClass="MainBaseViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gSM-Cq-i1K"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="oAT-wf-QzR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ba3-PA-Q2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1302" y="362"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CnW-NP-A1Q">
+            <objects>
+                <navigationController id="fee-6i-sUU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BIt-g2-Gis">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="LQ7-6l-nee" kind="relationship" relationship="rootViewController" id="OE5-O6-1iM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kai-If-21G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1295" y="171"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WBR-c5-LlN">
+            <objects>
+                <viewController id="2BM-QV-BEd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fHp-fY-dpT"/>
+                        <viewControllerLayoutGuide type="bottom" id="ahh-v0-8ay"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wq0-EZ-RUx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XD8-65-h7b">
+                                <rect key="frame" x="165" y="227" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fmm-0P-0Jq">
+                                <rect key="frame" x="277" y="227" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XD8-65-h7b" firstAttribute="leading" secondItem="Wq0-EZ-RUx" secondAttribute="leadingMargin" constant="145" id="10D-dL-MOb"/>
+                            <constraint firstItem="Fmm-0P-0Jq" firstAttribute="centerY" secondItem="XD8-65-h7b" secondAttribute="centerY" id="BNN-cw-ujj"/>
+                            <constraint firstItem="Fmm-0P-0Jq" firstAttribute="leading" secondItem="XD8-65-h7b" secondAttribute="trailing" constant="66" id="bkK-C5-BiR"/>
+                            <constraint firstItem="XD8-65-h7b" firstAttribute="top" secondItem="fHp-fY-dpT" secondAttribute="bottom" constant="207" id="cVA-Qs-RKw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sEc-EQ-nfF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-582" y="-61"/>
+        </scene>
+    </scenes>
+</document>
