@@ -16,6 +16,7 @@ IOS视频直播:高仿 腾讯旗下 【NOW】直播  ->映客直播类型
 开放了VideoToolbox.framework
 
 , 可以直接进行硬编解码, 这也是为什么现在大多数直播平台最低只支持到iOS8的原因之一. iOS端硬件兼容性比较好, 可以直接采取硬编码.
+
 -项目主要是基于[ijkplayer ](https://github.com/Bilibili/ijkplayer)的. 最好是打包成framework
 . 我也准备好了一份打包好的分享给大家
 -百度云盘链接: http://pan.baidu.com/s/1pLjbecF 密码: 5eac
