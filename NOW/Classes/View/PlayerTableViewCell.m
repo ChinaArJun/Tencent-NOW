@@ -13,7 +13,6 @@
 @property (nonatomic, strong)UILabel * nameLabel;
 @property (nonatomic, strong)UIButton * address;
 @property (nonatomic, strong)UILabel *peopleNumber;
-@property (nonatomic, strong)UILabel *peopleNumberTail;
 @property (nonatomic, strong)UIImageView * coverImage;
 @property (nonatomic, strong)UIButton *liveBtn;
 @property (nonatomic, strong)UIView *linesView;
@@ -55,12 +54,6 @@
     _peopleNumber.textColor = [UIColor grayColor];
     _peopleNumber.font = [UIFont systemFontOfSize:13];
     _peopleNumber.textAlignment = NSTextAlignmentRight;
-    // 尾部 _peopleNumberTail
-    _peopleNumberTail = [[UILabel alloc]init];
-    _peopleNumberTail.text = @"在看";
-    _peopleNumberTail.textColor = [UIColor grayColor];
-    _peopleNumberTail.font = [UIFont systemFontOfSize:13];
-    _peopleNumberTail.textAlignment = NSTextAlignmentRight;
     
     _coverImage = [[UIImageView alloc]init];
     _coverImage.contentMode = UIViewContentModeScaleAspectFill;
@@ -84,7 +77,6 @@
     [self addSubview:_iconImage];
     [self addSubview:_nameLabel];
     [self addSubview:_address];
-    [self addSubview:_peopleNumberTail];
     [self addSubview:_peopleNumber];
     [self addSubview:_coverImage];
     [self addSubview:_liveBtn];
@@ -102,14 +94,10 @@
         make.top.equalTo(@15);
     }];
     [_address mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(_nameLabel.mas_bottom).offset(-3);
+        make.top.equalTo(_nameLabel.mas_bottom).offset(5);
         make.width.equalTo(@60);
         make.leading.equalTo(_nameLabel);
         make.height.equalTo(@10);
-    }];
-    [_peopleNumberTail mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(_address);
-        make.trailing.equalTo(self).offset(-10);
     }];
     [_peopleNumber mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(_address);
@@ -118,13 +106,10 @@
         make.height.equalTo(@10);
         make.trailing.equalTo(self);
     }];
-    [_peopleNumberTail mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(_iconImage);
-        make.trailing.equalTo(self).offset(-10);
-    }];
+
     [_peopleNumber mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(_iconImage);
-        make.trailing.equalTo(_peopleNumberTail.mas_leading).offset(-3);
+        make.bottom.equalTo(_address);
+        make.trailing.equalTo(self.mas_trailing).offset(-3);
     }];
     
     [_coverImage mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -159,8 +144,8 @@
         [_address setTitle:playerModel.city forState:(UIControlStateNormal)];
     }
     [_iconImage sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://img.meelive.cn/%@",playerModel.portrait]]];
-    [_coverImage sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://img.meelive.cn/%@",playerModel.portrait]]];
-    _peopleNumber.text = [NSString stringWithFormat:@"%d",playerModel.online_users];
+    [_coverImage sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://img.meelive.cn/%@",playerModel.portrait]] placeholderImage:[UIImage imageNamed:@"liveRoom"]];
+    _peopleNumber.text = [NSString stringWithFormat:@"%d人在看",playerModel.online_users];
 }
 
 
