@@ -42,12 +42,13 @@
     [_address setImage:[UIImage imageNamed:@"address"] forState:UIControlStateNormal];
     [_address setTitle:@"中国" forState:UIControlStateNormal];
     _address.titleLabel.textAlignment = NSTextAlignmentLeft;
+    _address.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
     
     _peopleNumber = [[UILabel alloc]init];
     _peopleNumber.text = @"1";
     _peopleNumber.textColor = [UIColor purpleColor];
     _peopleNumber.font = [UIFont systemFontOfSize:17];
-    _address.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+    
     
     _peopleNumber = [[UILabel alloc]init];
     _peopleNumber.text = @"1";
@@ -95,7 +96,7 @@
     }];
     [_address mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(_nameLabel.mas_bottom).offset(5);
-        make.width.equalTo(@60);
+        make.trailing.equalTo(@200);
         make.leading.equalTo(_nameLabel);
         make.height.equalTo(@10);
     }];
