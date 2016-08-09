@@ -48,6 +48,12 @@
     _peopleNumber.text = @"1";
     _peopleNumber.textColor = [UIColor purpleColor];
     _peopleNumber.font = [UIFont systemFontOfSize:17];
+    _address.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+    
+    _peopleNumber = [[UILabel alloc]init];
+    _peopleNumber.text = @"1";
+    _peopleNumber.textColor = [UIColor grayColor];
+    _peopleNumber.font = [UIFont systemFontOfSize:13];
     _peopleNumber.textAlignment = NSTextAlignmentRight;
     // 尾部 _peopleNumberTail
     _peopleNumberTail = [[UILabel alloc]init];
@@ -107,9 +113,20 @@
     }];
     [_peopleNumber mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(_address);
+        make.top.equalTo(_nameLabel.mas_bottom).offset(5);
+        make.leading.equalTo(_iconImage.mas_trailing).offset(10);
+        make.height.equalTo(@10);
+        make.trailing.equalTo(self);
+    }];
+    [_peopleNumberTail mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(_iconImage);
+        make.trailing.equalTo(self).offset(-10);
+    }];
+    [_peopleNumber mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(_iconImage);
         make.trailing.equalTo(_peopleNumberTail.mas_leading).offset(-3);
     }];
-
+    
     [_coverImage mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(_iconImage.mas_bottom).offset(5);
         make.width.equalTo(self);

@@ -20,11 +20,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NOW/Classes/MainController/CommendViewController.m"
-            timestampString = "492252137.782695"
+            timestampString = "492443094.917926"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "-loadData"
             landmarkType = "5">
          </BreakpointContent>
@@ -36,11 +36,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NOW/Classes/MainController/PlayerViewController.m"
-            timestampString = "492255636.293289"
+            timestampString = "492442717.634592"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "205"
-            endingLineNumber = "205"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
             landmarkName = "-showTheLove:"
             landmarkType = "5">
          </BreakpointContent>

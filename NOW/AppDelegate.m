@@ -42,7 +42,7 @@
                 title = @"推荐";
                 break;
             case 1:
-                vcClass = [RegardViewController class];
+                vcClass = [CommendViewController class];
                 title = @"关注";
                 break;
         }

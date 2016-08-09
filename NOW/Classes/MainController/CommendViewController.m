@@ -9,6 +9,7 @@
 #import "CommendViewController.h"
 #import "PlayerTableViewCell.h"
 #import "PlayerViewController.h"
+#import "CustomButton.h"
 #import "PlayerModel.h"
 
 #define mainURL @"http://service.inke.com/api/live/aggregation?imsi=&uid=147970465&proto=6&idfa=3EDE83E7-9CD1-4186-9F37-EE77B7423265&lc=0000000000000027&cc=TG0001&imei=&sid=20tJHn0JsxdmOGkbNjpEjo3DIKFyoyboTrCjMvP7zNxofi1QNXT&cv=IK3.2.00_Iphone&devi=134a83cdf2e6701fa8f85c099c5e68ac3ea7bd4b&conn=Wifi&ua=iPhone%205s&idfv=5CCB6FE7-1F0F-4288-90DC-946D6F6C45C2&osversion=ios_9.300000&interest=1&location=0"
@@ -24,7 +25,7 @@
     [super viewDidLoad];
     
     [self bulidTableView];
-    
+    [self bulidCenterBtn];
     // 添加下拉刷新
     [self addRefresh];
 }
@@ -36,7 +37,20 @@
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:_tableView];
 }
-
+- (void)bulidCenterBtn{
+    CustomButton *btn = [[CustomButton alloc]init];
+    [btn setImage:[UIImage imageNamed:@"logo_3745aaf"] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(customBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.width.equalTo(@50);
+        make.centerX.equalTo(self.view);
+        make.bottom.equalTo(self.view).offset(-20);
+    }];
+}
+- (void)customBtnClick{
+    NSLog(@"%s",__func__);
+}
 #pragma mark - ---| 添加下拉刷新 |---
 - (void)addRefresh {
     MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadData)];

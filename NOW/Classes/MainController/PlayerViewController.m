@@ -52,7 +52,7 @@
     
     // 创建按钮
     [self setupBtn];
-
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -108,50 +108,23 @@
     playBtn.layer.shadowRadius = 1;
     [self.view addSubview:playBtn];
     
-    //消息
-    UIButton *normalBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    normalBtn.frame = CGRectMake(36, XJScreenH - 36 - 10, 36, 36);
-    [normalBtn setImage:[UIImage imageNamed:@"normalMsg"] forState:UIControlStateNormal];
-    normalBtn.layer.shadowColor = [UIColor blackColor].CGColor;
-    normalBtn.layer.shadowOffset = CGSizeMake(0, 0);
-    normalBtn.layer.shadowOpacity = 0.5;
-    normalBtn.layer.shadowRadius = 1;
-    [self.view addSubview:normalBtn];
-    
-
-    
-    //消息
-    UIButton *giftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    giftBtn.frame = CGRectMake(36+100, XJScreenH - 36 - 10, 36, 36);
-    [giftBtn setImage:[UIImage imageNamed:@"privateMsg"] forState:UIControlStateNormal];
-    giftBtn.layer.shadowColor = [UIColor blackColor].CGColor;
-    giftBtn.layer.shadowOffset = CGSizeMake(0,0);
-    giftBtn.layer.shadowOpacity = 0.5;
-    giftBtn.layer.shadowRadius = 1;
-    [self.view addSubview:giftBtn];
-    
-    //信箱
-    UIButton *messageBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    messageBtn.frame = CGRectMake(XJScreenW - 50 -100, XJScreenH - 36 - 10, 36, 36);
-    [messageBtn setImage:[UIImage imageNamed:@"share"] forState:UIControlStateNormal];
-
-    messageBtn.layer.shadowColor = [UIColor blackColor].CGColor;
-    messageBtn.layer.shadowOffset = CGSizeMake(0, 0);
-    messageBtn.layer.shadowOpacity = 0.5;
-    messageBtn.layer.shadowRadius = 1;
-    [self.view addSubview:messageBtn];
-    
-    // 礼物
-    UIButton * heartBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    heartBtn.frame = CGRectMake(XJScreenW - 50, XJScreenH - 36 - 10, 36, 36);
-    [heartBtn setImage:[UIImage imageNamed:@"gift"] forState:UIControlStateNormal];
-    [heartBtn addTarget:self action:@selector(showTheLove:) forControlEvents:UIControlEventTouchUpInside];
-    heartBtn.layer.shadowColor = [UIColor blackColor].CGColor;
-    heartBtn.layer.shadowOffset = CGSizeMake(0, 0);
-    heartBtn.layer.shadowOpacity = 0.5;
-    heartBtn.layer.shadowRadius = 1;
-    heartBtn.adjustsImageWhenHighlighted = NO;
-    [self.view addSubview:heartBtn];
+    CGFloat btnHW = 36;
+    CGFloat margin = 20;
+    CGFloat btnY = XJScreenH - 36 - 10;
+    CGFloat linesW = (SCREENWIDTH - (btnHW) - (margin * 2))/3;
+    NSArray *images = @[@"normalMsg",@"privateMsg",@"share",@"gift"];
+    for (int i = 0; i < 4; ++i) {
+        UIButton * heartBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        heartBtn.frame = CGRectMake(margin + (linesW * i),btnY , btnHW, btnHW);
+        [heartBtn setImage:[UIImage imageNamed:images[i]] forState:UIControlStateNormal];
+        [heartBtn addTarget:self action:@selector(showTheLove:) forControlEvents:UIControlEventTouchUpInside];
+        heartBtn.layer.shadowColor = [UIColor blackColor].CGColor;
+        heartBtn.layer.shadowOffset = CGSizeMake(0, 0);
+        heartBtn.layer.shadowOpacity = 0.5;
+        heartBtn.layer.shadowRadius = 1;
+        heartBtn.adjustsImageWhenHighlighted = NO;
+        [self.view addSubview:heartBtn];
+    }
 }
 
 - (void)goPlaying {
@@ -172,7 +145,7 @@
     
     [self.PlayerView insertSubview:playerview atIndex:1];
     [_player setScalingMode:IJKMPMovieScalingModeAspectFill];
-
+    
 }
 
 // 返回
@@ -204,15 +177,15 @@
 -(void)showTheLove:(UIButton *)sender{
     
     [self rote];
-
-//    // button点击动画
-//    CAKeyframeAnimation *btnAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
-//    btnAnimation.values = @[@(1.0),@(0.7),@(0.5),@(0.3),@(0.5),@(0.7),@(1.0), @(1.2), @(1.4), @(1.2), @(1.0)];
-//    btnAnimation.keyTimes = @[@(0.0),@(0.1),@(0.2),@(0.3),@(0.4),@(0.5),@(0.6),@(0.7),@(0.8),@(0.9),@(1.0)];
-//    btnAnimation.calculationMode = kCAAnimationLinear;
-//    btnAnimation.duration = 0.3;
-//    
-//    [sender.layer addAnimation:btnAnimation forKey:@"SHOW"];
+    
+    //    // button点击动画
+    //    CAKeyframeAnimation *btnAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
+    //    btnAnimation.values = @[@(1.0),@(0.7),@(0.5),@(0.3),@(0.5),@(0.7),@(1.0), @(1.2), @(1.4), @(1.2), @(1.0)];
+    //    btnAnimation.keyTimes = @[@(0.0),@(0.1),@(0.2),@(0.3),@(0.4),@(0.5),@(0.6),@(0.7),@(0.8),@(0.9),@(1.0)];
+    //    btnAnimation.calculationMode = kCAAnimationLinear;
+    //    btnAnimation.duration = 0.3;
+    //
+    //    [sender.layer addAnimation:btnAnimation forKey:@"SHOW"];
     
 }
 
@@ -250,7 +223,7 @@
             [porsche918 removeFromSuperview];
         }];
     });
- 
+    
     
     
     //烟花
@@ -263,7 +236,7 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(durTime * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [UIView animateWithDuration:0.5 animations:^{
             //没找到设置透明度的方法，有创意可以自己写
-//            fireworksL.alpha = 0;
+            //            fireworksL.alpha = 0;
         } completion:^(BOOL finished) {
             [fireworksL removeFromSuperlayer];
         }];
@@ -271,7 +244,7 @@
     _fireworksL = fireworksL;
     
     
-
+    
     NSMutableArray *tempArray = [NSMutableArray array];
     
     for (int i = 1; i < 3; i++) {

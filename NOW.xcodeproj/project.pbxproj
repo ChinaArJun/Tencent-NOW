@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		159108C01D5A14B80057AA20 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 159108BF1D5A14B80057AA20 /* CustomButton.m */; };
 		15B27E0F1D56D3A300F5DF02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B27E0E1D56D3A300F5DF02 /* main.m */; };
 		15B27E121D56D3A300F5DF02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B27E111D56D3A300F5DF02 /* AppDelegate.m */; };
 		15B27E181D56D3A300F5DF02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15B27E161D56D3A300F5DF02 /* Main.storyboard */; };
@@ -48,6 +49,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		159108BE1D5A14B80057AA20 /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
+		159108BF1D5A14B80057AA20 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
 		15B27E0A1D56D3A300F5DF02 /* NOW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NOW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15B27E0E1D56D3A300F5DF02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		15B27E101D56D3A300F5DF02 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -193,6 +196,8 @@
 				15B27E461D57199A00F5DF02 /* PlayerTableViewCell.m */,
 				15B27E4D1D57286400F5DF02 /* DMHeartFlyView.h */,
 				15B27E4E1D57286400F5DF02 /* DMHeartFlyView.m */,
+				159108BE1D5A14B80057AA20 /* CustomButton.h */,
+				159108BF1D5A14B80057AA20 /* CustomButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -352,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				159108C01D5A14B80057AA20 /* CustomButton.m in Sources */,
 				15B27E411D570C9100F5DF02 /* AFNetwork.m in Sources */,
 				15B27E2D1D56D79B00F5DF02 /* CommendViewController.m in Sources */,
 				15B27E3E1D570C2500F5DF02 /* NSObject+Log.m in Sources */,
@@ -475,6 +481,7 @@
 			baseConfigurationReference = 2F03733812ED9077A49DDBEE /* Pods-NOW.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -495,6 +502,7 @@
 			baseConfigurationReference = EAA672F47E0DE0151A6C889B /* Pods-NOW.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
