@@ -22,6 +22,7 @@ IOS视频直播:高仿 腾讯旗下 【NOW】直播  ->映客直播类型
 -百度云盘链接: http://pan.baidu.com/s/1pLjbecF 密码: 5eac
 
 效果图如下
+
 ![12](https://github.com/ChinaArJun/Tencent-NOW/blob/master/NowGif.gif)
 
 ![12](https://github.com/ChinaArJun/Tencent-NOW/blob/master/image1.png)
