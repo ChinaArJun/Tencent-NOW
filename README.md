@@ -25,6 +25,8 @@ IOS视频直播:高仿 腾讯旗下 【NOW】直播  ->映客直播类型
 
 ![12](https://github.com/ChinaArJun/Tencent-NOW/blob/master/NowGif.gif)
 
+
 ![12](https://github.com/ChinaArJun/Tencent-NOW/blob/master/image1.png)
+
 
 ![12](https://github.com/ChinaArJun/Tencent-NOW/blob/master/image2.png)
