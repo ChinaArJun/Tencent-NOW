@@ -24,11 +24,19 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     
+    [self addTimerNotifacition];
     [self bulidTableView];
     [self bulidCenterBtn];
     // 添加下拉刷新
     [self addRefresh];
+    
 }
+#pragma mark --- 暂时考虑使用time自动刷新，有所欠缺，欢迎指正 ---
+- (void)addTimerNotifacition{
+    NSTimer *timer = [NSTimer timerWithTimeInterval:10 target:self selector:@selector(loadData) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop]addTimer:timer forMode:NSDefaultRunLoopMode];
+}
+
 - (void)bulidTableView{
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     _tableView.delegate = self;
@@ -62,6 +70,7 @@
 }
 
 - (void)loadData{
+    [self.dataList removeAllObjects];
     // 格式
     NSDictionary *dic = @{@"format":@"json"};
     [AFNetwork GET:mainURL parameters:dic success:^(id  _Nonnull json) {

@@ -7,6 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CommendViewController.h"
+#import <WMPageController.h>
+#import "MainBaseViewController.h"
+#import "MainNavigationController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		158FEDD21D637C1C00E5F27F /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158FEDD11D637C1C00E5F27F /* MainNavigationController.m */; };
 		159108C01D5A14B80057AA20 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 159108BF1D5A14B80057AA20 /* CustomButton.m */; };
+		15A61B041D636F68003B571A /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A61B031D636F68003B571A /* PersonalViewController.m */; };
+		15A61B071D637095003B571A /* FansViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A61B061D637095003B571A /* FansViewController.m */; };
+		15A61B0A1D63795B003B571A /* UIViewController+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A61B091D63795B003B571A /* UIViewController+Extend.m */; };
 		15B27E0F1D56D3A300F5DF02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B27E0E1D56D3A300F5DF02 /* main.m */; };
 		15B27E121D56D3A300F5DF02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B27E111D56D3A300F5DF02 /* AppDelegate.m */; };
 		15B27E181D56D3A300F5DF02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15B27E161D56D3A300F5DF02 /* Main.storyboard */; };
 		15B27E1A1D56D3A300F5DF02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15B27E191D56D3A300F5DF02 /* Assets.xcassets */; };
 		15B27E1D1D56D3A300F5DF02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15B27E1B1D56D3A300F5DF02 /* LaunchScreen.storyboard */; };
 		15B27E2D1D56D79B00F5DF02 /* CommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B27E2C1D56D79B00F5DF02 /* CommendViewController.m */; };
-		15B27E301D56D7C700F5DF02 /* RegardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B27E2F1D56D7C700F5DF02 /* RegardViewController.m */; };
 		15B27E371D56E07100F5DF02 /* MainBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B27E361D56E07100F5DF02 /* MainBaseViewController.m */; };
 		15B27E3E1D570C2500F5DF02 /* NSObject+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B27E3C1D570C2500F5DF02 /* NSObject+Log.m */; };
 		15B27E411D570C9100F5DF02 /* AFNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B27E401D570C9100F5DF02 /* AFNetwork.m */; };
@@ -49,8 +52,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		158FEDD01D637C1C00E5F27F /* MainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
+		158FEDD11D637C1C00E5F27F /* MainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationController.m; sourceTree = "<group>"; };
 		159108BE1D5A14B80057AA20 /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
 		159108BF1D5A14B80057AA20 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
+		15A61B021D636F68003B571A /* PersonalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalViewController.h; sourceTree = "<group>"; };
+		15A61B031D636F68003B571A /* PersonalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalViewController.m; sourceTree = "<group>"; };
+		15A61B051D637095003B571A /* FansViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FansViewController.h; sourceTree = "<group>"; };
+		15A61B061D637095003B571A /* FansViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FansViewController.m; sourceTree = "<group>"; };
+		15A61B081D63795B003B571A /* UIViewController+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extend.h"; sourceTree = "<group>"; };
+		15A61B091D63795B003B571A /* UIViewController+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extend.m"; sourceTree = "<group>"; };
 		15B27E0A1D56D3A300F5DF02 /* NOW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NOW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15B27E0E1D56D3A300F5DF02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		15B27E101D56D3A300F5DF02 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,8 +72,6 @@
 		15B27E1E1D56D3A300F5DF02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15B27E2B1D56D79B00F5DF02 /* CommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommendViewController.h; sourceTree = "<group>"; };
 		15B27E2C1D56D79B00F5DF02 /* CommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommendViewController.m; sourceTree = "<group>"; };
-		15B27E2E1D56D7C700F5DF02 /* RegardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegardViewController.h; sourceTree = "<group>"; };
-		15B27E2F1D56D7C700F5DF02 /* RegardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegardViewController.m; sourceTree = "<group>"; };
 		15B27E341D56DDBA00F5DF02 /* PCH_NOWHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCH_NOWHeader.h; sourceTree = "<group>"; };
 		15B27E351D56E07100F5DF02 /* MainBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainBaseViewController.h; sourceTree = "<group>"; };
 		15B27E361D56E07100F5DF02 /* MainBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainBaseViewController.m; sourceTree = "<group>"; };
@@ -167,14 +176,18 @@
 		15B27E251D56D74200F5DF02 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				158FEDD01D637C1C00E5F27F /* MainNavigationController.h */,
+				158FEDD11D637C1C00E5F27F /* MainNavigationController.m */,
 				15B27E351D56E07100F5DF02 /* MainBaseViewController.h */,
 				15B27E361D56E07100F5DF02 /* MainBaseViewController.m */,
 				15B27E2B1D56D79B00F5DF02 /* CommendViewController.h */,
 				15B27E2C1D56D79B00F5DF02 /* CommendViewController.m */,
-				15B27E2E1D56D7C700F5DF02 /* RegardViewController.h */,
-				15B27E2F1D56D7C700F5DF02 /* RegardViewController.m */,
 				15B27E481D57283400F5DF02 /* PlayerViewController.h */,
 				15B27E491D57283400F5DF02 /* PlayerViewController.m */,
+				15A61B021D636F68003B571A /* PersonalViewController.h */,
+				15A61B031D636F68003B571A /* PersonalViewController.m */,
+				15A61B051D637095003B571A /* FansViewController.h */,
+				15A61B061D637095003B571A /* FansViewController.m */,
 			);
 			name = Controller;
 			path = MainController;
@@ -209,6 +222,8 @@
 				15B27E401D570C9100F5DF02 /* AFNetwork.m */,
 				15B27E3B1D570C2500F5DF02 /* NSObject+Log.h */,
 				15B27E3C1D570C2500F5DF02 /* NSObject+Log.m */,
+				15A61B081D63795B003B571A /* UIViewController+Extend.h */,
+				15A61B091D63795B003B571A /* UIViewController+Extend.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -359,9 +374,9 @@
 			files = (
 				159108C01D5A14B80057AA20 /* CustomButton.m in Sources */,
 				15B27E411D570C9100F5DF02 /* AFNetwork.m in Sources */,
+				15A61B071D637095003B571A /* FansViewController.m in Sources */,
 				15B27E2D1D56D79B00F5DF02 /* CommendViewController.m in Sources */,
 				15B27E3E1D570C2500F5DF02 /* NSObject+Log.m in Sources */,
-				15B27E301D56D7C700F5DF02 /* RegardViewController.m in Sources */,
 				15B27E371D56E07100F5DF02 /* MainBaseViewController.m in Sources */,
 				15B27E121D56D3A300F5DF02 /* AppDelegate.m in Sources */,
 				15B27E441D57186100F5DF02 /* PlayerModel.m in Sources */,
@@ -369,6 +384,9 @@
 				15B27E0F1D56D3A300F5DF02 /* main.m in Sources */,
 				15B27E471D57199A00F5DF02 /* PlayerTableViewCell.m in Sources */,
 				15B27E4A1D57283400F5DF02 /* PlayerViewController.m in Sources */,
+				15A61B041D636F68003B571A /* PersonalViewController.m in Sources */,
+				158FEDD21D637C1C00E5F27F /* MainNavigationController.m in Sources */,
+				15A61B0A1D63795B003B571A /* UIViewController+Extend.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +512,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = github.com.ChinaArJun.NOW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -515,6 +534,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = github.com.ChinaArJun.NOW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

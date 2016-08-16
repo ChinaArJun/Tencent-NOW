@@ -7,11 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "CommendViewController.h"
-#import "RegardViewController.h"
-#import <WMPageController.h>
-#import "MainBaseViewController.h"
-
 @interface AppDelegate ()
 
 @end
@@ -23,7 +18,7 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     WMPageController *page = [self addPageController];
-    UINavigationController *salesNav =  [[UINavigationController alloc] initWithRootViewController:page];
+    MainNavigationController *salesNav =  [[MainNavigationController alloc] initWithRootViewController:page];
     self.window.rootViewController = salesNav;
     [self.window makeKeyAndVisible];
     return YES;
