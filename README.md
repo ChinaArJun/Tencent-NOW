@@ -19,7 +19,7 @@ IOS视频直播:高仿 腾讯旗下 【NOW】直播  ->映客直播类型 ——
 
 -项目主要是基于[ijkplayer ](https://github.com/Bilibili/ijkplayer)的. 最好是打包成framework
 . 我也准备好了一份打包好的分享给大家
--百度云盘链接: http://pan.baidu.com/s/1pLjbecF 密码: 5eac
+-百度云盘链接: https://pan.baidu.com/s/1jIEZN8M 密码: igcq
 
 效果图如下
 
