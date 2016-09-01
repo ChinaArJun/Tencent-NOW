@@ -31,7 +31,7 @@ IOS视频直播:高仿 腾讯旗下 【NOW】直播  ->映客直播类型 ——
 
 ![12](https://github.com/ChinaArJun/Tencent-NOW/blob/master/image2.png)
 
-已增加了对IPad的适配，增加流程度
+已增加了对IPad的适配，更加丝滑流畅
 
 ![12](https://github.com/ChinaArJun/Tencent-NOW/blob/master/img_0257.png)
 
