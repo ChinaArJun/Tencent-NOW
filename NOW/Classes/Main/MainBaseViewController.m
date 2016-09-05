@@ -9,7 +9,7 @@
 #import "MainBaseViewController.h"
 #import "CommendViewController.h"
 #import "FansViewController.h"
-#import "PersonalViewController.h"
+#import "ProfileViewController.h"
 #import <WMPageController.h>
 
 @implementation MainBaseViewController
@@ -28,7 +28,7 @@
     [self showViewController:page sender:nil];
 }
 - (void)leftBarClick{
-    PersonalViewController *personal = [[PersonalViewController alloc]init];
+    ProfileViewController *personal = [[ProfileViewController alloc]init];
     [self showViewController:personal sender:nil];
 }
 
