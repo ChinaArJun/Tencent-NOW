@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		152016981D7688A4004B9A60 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 152016961D7688A4004B9A60 /* ProfileViewController.m */; };
 		1520169B1D7688E0004B9A60 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1520169A1D7688E0004B9A60 /* BaseTableViewController.m */; };
+		152166A71D9ACBB20070B21E /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152166A61D9ACBB20070B21E /* IJKMediaFramework.framework */; };
 		1545B9C51D768B4700BACFC4 /* ProfileCellGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1545B9C41D768B4700BACFC4 /* ProfileCellGroupModel.m */; };
 		1545B9C81D768B7900BACFC4 /* ProfileCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1545B9C71D768B7900BACFC4 /* ProfileCellModel.m */; };
 		1545B9CB1D768E6100BACFC4 /* ProfileCellArrowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1545B9CA1D768E6100BACFC4 /* ProfileCellArrowModel.m */; };
@@ -64,6 +65,7 @@
 		152016961D7688A4004B9A60 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		152016991D7688E0004B9A60 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
 		1520169A1D7688E0004B9A60 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		152166A61D9ACBB20070B21E /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		1545B9C31D768B4700BACFC4 /* ProfileCellGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileCellGroupModel.h; sourceTree = "<group>"; };
 		1545B9C41D768B4700BACFC4 /* ProfileCellGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileCellGroupModel.m; sourceTree = "<group>"; };
 		1545B9C61D768B7900BACFC4 /* ProfileCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileCellModel.h; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				15B27E601D57292A00F5DF02 /* AVFoundation.framework in Frameworks */,
 				15B27E5E1D57291E00F5DF02 /* libbz2.tbd in Frameworks */,
 				15B27E5C1D57291600F5DF02 /* libz.tbd in Frameworks */,
+				152166A71D9ACBB20070B21E /* IJKMediaFramework.framework in Frameworks */,
 				15B27E5A1D57290900F5DF02 /* UIKit.framework in Frameworks */,
 				15B27E581D57290100F5DF02 /* Foundation.framework in Frameworks */,
 				15B27E541D5728CB00F5DF02 /* IJKMediaFramework.framework in Frameworks */,
@@ -210,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				15B27E531D5728CB00F5DF02 /* IJKMediaFramework.framework */,
+				152166A61D9ACBB20070B21E /* IJKMediaFramework.framework */,
 				15B27E0C1D56D3A300F5DF02 /* NOW */,
 				15B27E0B1D56D3A300F5DF02 /* Products */,
 				804836AE7F8A0817FD912AE2 /* Pods */,
