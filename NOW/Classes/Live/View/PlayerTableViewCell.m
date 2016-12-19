@@ -144,8 +144,8 @@
     }else{
         [_address setTitle:playerModel.city forState:(UIControlStateNormal)];
     }
-    [_iconImage sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://img.meelive.cn/%@",playerModel.portrait]]];
-    [_coverImage sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://img.meelive.cn/%@",playerModel.portrait]] placeholderImage:[UIImage imageNamed:@"liveRoom"]];
+    [_iconImage sd_setImageWithURL:[NSURL URLWithString:playerModel.portrait]];
+    [_coverImage sd_setImageWithURL:[NSURL URLWithString:playerModel.portrait] placeholderImage:[UIImage imageNamed:@"liveRoom"]];
     _peopleNumber.text = [NSString stringWithFormat:@"%d人在看",playerModel.online_users];
 }
 
