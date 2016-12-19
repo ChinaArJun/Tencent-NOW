@@ -1,4 +1,8 @@
 # NOW
+-NOW项目主要是基于[ijkplayer ](https://github.com/Bilibili/ijkplayer)的. 最好是打包成framework
+. 我也准备好了一份打包好的分享给大家
+-百度云盘链接: https://pan.baidu.com/s/1jIEZN8M 密码: igcq
+
 IOS视频直播:高仿 腾讯旗下 【NOW】直播  ->映客直播类型 —— 喜欢的记点star谢谢
 
 随着今年近两年直播平台的火热，腾讯旗下NOW直播平台也进驻市场
@@ -17,9 +21,6 @@ IOS视频直播:高仿 腾讯旗下 【NOW】直播  ->映客直播类型 ——
 
 , 可以直接进行硬编解码, 这也是为什么现在大多数直播平台最低只支持到iOS8的原因之一. iOS端硬件兼容性比较好, 可以直接采取硬编码.
 
--项目主要是基于[ijkplayer ](https://github.com/Bilibili/ijkplayer)的. 最好是打包成framework
-. 我也准备好了一份打包好的分享给大家
--百度云盘链接: https://pan.baidu.com/s/1jIEZN8M 密码: igcq
 
 效果图如下
 
