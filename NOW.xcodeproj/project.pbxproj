@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		152016981D7688A4004B9A60 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 152016961D7688A4004B9A60 /* ProfileViewController.m */; };
 		1520169B1D7688E0004B9A60 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1520169A1D7688E0004B9A60 /* BaseTableViewController.m */; };
-		152166A71D9ACBB20070B21E /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152166A61D9ACBB20070B21E /* IJKMediaFramework.framework */; };
 		1545B9C51D768B4700BACFC4 /* ProfileCellGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1545B9C41D768B4700BACFC4 /* ProfileCellGroupModel.m */; };
 		1545B9C81D768B7900BACFC4 /* ProfileCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1545B9C71D768B7900BACFC4 /* ProfileCellModel.m */; };
 		1545B9CB1D768E6100BACFC4 /* ProfileCellArrowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1545B9CA1D768E6100BACFC4 /* ProfileCellArrowModel.m */; };
@@ -26,14 +25,12 @@
 		15B27E3E1D570C2500F5DF02 /* NSObject+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B27E3C1D570C2500F5DF02 /* NSObject+Log.m */; };
 		15B27E411D570C9100F5DF02 /* AFNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B27E401D570C9100F5DF02 /* AFNetwork.m */; };
 		15B27E501D57288200F5DF02 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B27E4B1D57284600F5DF02 /* IJKMediaFramework.framework */; };
-		15B27E541D5728CB00F5DF02 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B27E531D5728CB00F5DF02 /* IJKMediaFramework.framework */; };
-		15B27E551D5728E200F5DF02 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B27E531D5728CB00F5DF02 /* IJKMediaFramework.framework */; };
-		15B27E561D5728E200F5DF02 /* IJKMediaFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15B27E531D5728CB00F5DF02 /* IJKMediaFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		15B27E581D57290100F5DF02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B27E571D57290100F5DF02 /* Foundation.framework */; };
 		15B27E5A1D57290900F5DF02 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B27E591D57290900F5DF02 /* UIKit.framework */; };
 		15B27E5C1D57291600F5DF02 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B27E5B1D57291600F5DF02 /* libz.tbd */; };
 		15B27E5E1D57291E00F5DF02 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B27E5D1D57291E00F5DF02 /* libbz2.tbd */; };
 		15B27E601D57292A00F5DF02 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B27E5F1D57292A00F5DF02 /* AVFoundation.framework */; };
+		15CAE7F71F6AEB7F0095EB0D /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CAE7F61F6AEB7F0095EB0D /* IJKMediaFramework.framework */; };
 		15DCFBD01D7D06D4000DE0FE /* CommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DCFBBC1D7D06D4000DE0FE /* CommendViewController.m */; };
 		15DCFBD11D7D06D4000DE0FE /* FansViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DCFBBE1D7D06D4000DE0FE /* FansViewController.m */; };
 		15DCFBD21D7D06D4000DE0FE /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DCFBC01D7D06D4000DE0FE /* PlayerViewController.m */; };
@@ -53,7 +50,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				15B27E561D5728E200F5DF02 /* IJKMediaFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,7 +61,6 @@
 		152016961D7688A4004B9A60 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		152016991D7688E0004B9A60 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
 		1520169A1D7688E0004B9A60 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
-		152166A61D9ACBB20070B21E /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		1545B9C31D768B4700BACFC4 /* ProfileCellGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileCellGroupModel.h; sourceTree = "<group>"; };
 		1545B9C41D768B4700BACFC4 /* ProfileCellGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileCellGroupModel.m; sourceTree = "<group>"; };
 		1545B9C61D768B7900BACFC4 /* ProfileCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileCellModel.h; sourceTree = "<group>"; };
@@ -96,12 +91,12 @@
 		15B27E3F1D570C9100F5DF02 /* AFNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetwork.h; sourceTree = "<group>"; };
 		15B27E401D570C9100F5DF02 /* AFNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetwork.m; sourceTree = "<group>"; };
 		15B27E4B1D57284600F5DF02 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFramework.framework; path = /Users/pro/Desktop/NOW/NOW/IJKMediaFramework.framework; sourceTree = "<absolute>"; };
-		15B27E531D5728CB00F5DF02 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		15B27E571D57290100F5DF02 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		15B27E591D57290900F5DF02 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		15B27E5B1D57291600F5DF02 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		15B27E5D1D57291E00F5DF02 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 		15B27E5F1D57292A00F5DF02 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		15CAE7F61F6AEB7F0095EB0D /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		15DCFBBB1D7D06D4000DE0FE /* CommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommendViewController.h; sourceTree = "<group>"; };
 		15DCFBBC1D7D06D4000DE0FE /* CommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommendViewController.m; sourceTree = "<group>"; };
 		15DCFBBD1D7D06D4000DE0FE /* FansViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FansViewController.h; sourceTree = "<group>"; };
@@ -133,13 +128,11 @@
 				15B27E601D57292A00F5DF02 /* AVFoundation.framework in Frameworks */,
 				15B27E5E1D57291E00F5DF02 /* libbz2.tbd in Frameworks */,
 				15B27E5C1D57291600F5DF02 /* libz.tbd in Frameworks */,
-				152166A71D9ACBB20070B21E /* IJKMediaFramework.framework in Frameworks */,
+				15CAE7F71F6AEB7F0095EB0D /* IJKMediaFramework.framework in Frameworks */,
 				15B27E5A1D57290900F5DF02 /* UIKit.framework in Frameworks */,
 				15B27E581D57290100F5DF02 /* Foundation.framework in Frameworks */,
-				15B27E541D5728CB00F5DF02 /* IJKMediaFramework.framework in Frameworks */,
 				15B27E501D57288200F5DF02 /* IJKMediaFramework.framework in Frameworks */,
 				3E8D1EDF17B3AFB3B4221826 /* libPods-NOW.a in Frameworks */,
-				15B27E551D5728E200F5DF02 /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +205,7 @@
 		15B27E011D56D3A300F5DF02 = {
 			isa = PBXGroup;
 			children = (
-				15B27E531D5728CB00F5DF02 /* IJKMediaFramework.framework */,
-				152166A61D9ACBB20070B21E /* IJKMediaFramework.framework */,
+				15CAE7F61F6AEB7F0095EB0D /* IJKMediaFramework.framework */,
 				15B27E0C1D56D3A300F5DF02 /* NOW */,
 				15B27E0B1D56D3A300F5DF02 /* Products */,
 				804836AE7F8A0817FD912AE2 /* Pods */,
