@@ -1,9 +1,9 @@
 //
 //  DMHeartFlyView.h
-//  DMHeartFlyAnimation
+//  NOW
 //
-//  Created by Rick on 16/3/9.
-//  Copyright © 2016年 Rick. All rights reserved.
+//  Created by ArJun on 16/8/9.
+//  Copyright © 2016年 ArJun. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

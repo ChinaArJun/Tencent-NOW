@@ -110,11 +110,11 @@
 
     [_peopleNumber mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(_address);
-        make.trailing.equalTo(self.mas_trailing).offset(-3);
+        make.trailing.equalTo(self.mas_trailing).offset(-10);
     }];
     
     [_coverImage mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(_iconImage.mas_bottom).offset(5);
+        make.top.equalTo(_iconImage.mas_bottom).offset(10);
         make.width.equalTo(self);
         make.bottom.equalTo(self).offset(-20);
     }];
