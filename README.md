@@ -3,7 +3,7 @@
 
 -已经准备好了一份打包好的分享给大家
 
--请看我的博客:[IOS视频直播:高仿腾讯旗下<NOW直播>映客直播类型](http://www.jianshu.com/p/00747b41c741), 里面有打包教程和下载地址!!!
+-百度云盘链接: https://pan.baidu.com/s/1jIEZN8M 密码: igcq
 
 -记得打开项目后将打包好的[ijkplayer ]拖入项目，不然会报错
 
