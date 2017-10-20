@@ -31,10 +31,10 @@
     [self addRefresh];
     
 }
-#pragma mark --- 暂时考虑使用time自动刷新，有所欠缺，欢迎指正 ---
+#pragma mark ---
 - (void)addTimerNotifacition{
-    NSTimer *timer = [NSTimer timerWithTimeInterval:10 target:self selector:@selector(loadData) userInfo:nil repeats:YES];
-    [[NSRunLoop currentRunLoop]addTimer:timer forMode:NSDefaultRunLoopMode];
+//    NSTimer *timer = [NSTimer timerWithTimeInterval:10 target:self selector:@selector(loadData) userInfo:nil repeats:YES];
+//    [[NSRunLoop currentRunLoop]addTimer:timer forMode:NSDefaultRunLoopMode];
 }
 
 - (void)bulidTableView{
