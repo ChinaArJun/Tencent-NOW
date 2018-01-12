@@ -8,4 +8,5 @@ pod 'WMPageController'
 pod 'AFNetworking', '~> 3.0'
 pod 'SVProgressHUD'
 pod 'SDWebImage'
+pod 'MJExtension', '~> 3.0.10'
 end

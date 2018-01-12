@@ -12,11 +12,12 @@
 #import "CustomButton.h"
 #import "PlayerModel.h"
 
-#define mainURL @"http://service.inke.com/api/live/aggregation?imsi=&uid=147808343&proto=6&imei=&interest=1&location=0"
+#define mainURL @"http://live.9158.com/Fans/GetHotLive?page=%ld"
 #define Ratio 708/550
 @interface CommendViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataList;
+@property(nonatomic, assign) NSInteger page;
 @end
 
 @implementation CommendViewController
@@ -61,37 +62,56 @@
 }
 #pragma mark - ---| 添加下拉刷新 |---
 - (void)addRefresh {
-    MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadData)];
+    MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
     header.lastUpdatedTimeLabel.hidden = YES;
     header.lastUpdatedTimeLabel.hidden = YES;
     header.stateLabel.hidden = YES;
+    
+    MJRefreshAutoNormalFooter *footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
+    
+    
     self.tableView.mj_header = header;
+    self.tableView.mj_footer = footer;
     [self.tableView.mj_header beginRefreshing];
 }
 
+- (void)loadNewData {
+    self.page = 1;
+    [self loadData];
+}
+
+- (void)loadMoreData {
+    self.page ++;
+    [self loadData];
+}
+
 - (void)loadData{
+    
     [self.dataList removeAllObjects];
     // 格式
     NSDictionary *dic = @{@"format":@"json"};
-    [AFNetwork GET:mainURL parameters:dic success:^(id  _Nonnull json) {
-        
-        NSArray *listArray = [json objectForKey:@"lives"];
-        for (NSDictionary *dic in listArray) {
-            MJWeakSelf
-            PlayerModel *playerModel = [[PlayerModel alloc] initWithDictionary:dic];
-            playerModel.city = dic[@"city"];
-            playerModel.portrait = dic[@"creator"][@"portrait"];
-            playerModel.name = dic[@"creator"][@"nick"];
-            playerModel.online_users = [dic[@"online_users"] intValue];
-            NSLog(@"playerModel.online_users = %d",playerModel.online_users);
-            playerModel.url = dic[@"stream_addr"];
-            [weakSelf.dataList addObject:playerModel];
+    [AFNetwork GET:[NSString stringWithFormat:@"http://live.9158.com/Fans/GetHotLive?page=%zd", self.page] parameters:dic success:^(id  _Nonnull json) {
+        NSLog(@"data = json");
+        if (self.page == 1) {
+            self.dataList = [PlayerModel mj_objectArrayWithKeyValuesArray:[json objectForKey:@"data"][@"list"]];
+            [self.tableView.mj_header endRefreshing];
+        } else {
+            NSArray *array = [PlayerModel mj_objectArrayWithKeyValuesArray:[json objectForKey:@"data"][@"list"]];
+            if (array.count == 0) {
+                [self.tableView.mj_footer endRefreshingWithNoMoreData];
+                return;
+            }
+            [self.tableView.mj_header endRefreshing];
+            for (PlayerModel *obj in array) {
+                [self.dataList addObject:obj];
+            }
         }
         [self.tableView reloadData];
-        [self.tableView.mj_header endRefreshing];
+        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"error = %@",error);
         [self.tableView.mj_header endRefreshing];
+        [self.tableView.mj_footer endRefreshing];
     }];
 }
 
@@ -116,8 +136,8 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     PlayerViewController * playerVc = [[PlayerViewController alloc] init];
     PlayerModel * PlayerModel = self.dataList[indexPath.row];
-    playerVc.liveUrl = PlayerModel.url;
-    playerVc.imageUrl = PlayerModel.portrait;
+    playerVc.liveUrl = PlayerModel.flv;
+    playerVc.imageUrl = PlayerModel.smallpic;
     [self.navigationController pushViewController:playerVc animated:true];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 }

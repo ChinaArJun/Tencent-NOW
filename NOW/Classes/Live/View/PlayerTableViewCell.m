@@ -138,15 +138,15 @@
 
 - (void)setPlayerModel:(PlayerModel *)playerModel{
     _playerModel = playerModel;
-    _nameLabel.text = playerModel.name;
-    if ([playerModel.city isEqualToString:@""]) {
+    _nameLabel.text = playerModel.myname;
+    if ([playerModel.gps isEqualToString:@""]) {
         [_address setTitle:@"难道在火星?" forState:(UIControlStateNormal)];
     }else{
-        [_address setTitle:playerModel.city forState:(UIControlStateNormal)];
+        [_address setTitle:playerModel.gps forState:(UIControlStateNormal)];
     }
-    [_iconImage sd_setImageWithURL:[NSURL URLWithString:playerModel.portrait]];
-    [_coverImage sd_setImageWithURL:[NSURL URLWithString:playerModel.portrait] placeholderImage:[UIImage imageNamed:@"liveRoom"]];
-    _peopleNumber.text = [NSString stringWithFormat:@"%d人在看",playerModel.online_users];
+    [_iconImage sd_setImageWithURL:[NSURL URLWithString:playerModel.bigpic]];
+    [_coverImage sd_setImageWithURL:[NSURL URLWithString:playerModel.smallpic] placeholderImage:[UIImage imageNamed:@"liveRoom"]];
+    _peopleNumber.text = [NSString stringWithFormat:@"%zd人在看",playerModel.pos];
 }
 
 

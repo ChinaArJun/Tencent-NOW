@@ -12,6 +12,7 @@
 #import <MJRefresh.h>
 #import "AFNetwork.h"
 #import <Masonry.h>
+#import <MJExtension.h>
 #import "UIImageView+WebCache.h"
 #import "UIView+Extension.h"
 
