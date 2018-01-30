@@ -3,7 +3,7 @@
 
 -已经准备好了一份打包好的分享给大家
 
--百度云盘链接: https://pan.baidu.com/s/1jIEZN8M 密码: igcq
+-百度云盘链接:https://pan.baidu.com/s/1smNcwsX  密码:xpsq
 
 -记得打开项目后将打包好的[ijkplayer ]拖入项目，不然会报错
 
