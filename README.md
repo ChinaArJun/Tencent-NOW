@@ -40,10 +40,5 @@ iOS端硬件兼容性比较好, 可以直接采取硬编码.
 
 ![12](https://github.com/ChinaArJun/Tencent-NOW/blob/master/image2.png)
 
-已增加了对IPad的适配，更加丝滑流畅
-
-![12](https://github.com/ChinaArJun/Tencent-NOW/blob/master/img_0257.png)
-
-![12](https://github.com/ChinaArJun/Tencent-NOW/blob/master/img_0258.png)
-
+#### 欢迎关注我的微信公众号
 ![微信公众号](http://qiniu.zhequtao.com/qrcode.jpg)
